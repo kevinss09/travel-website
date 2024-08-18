@@ -1,0 +1,21 @@
+@import "../../assets/scss/colorVariables";
+
+.stars {
+	min-width: 300px;
+	position: relative;
+	display: inline-flex;
+	.star {
+		position: absolute;
+		display: inline-flex;
+		mask: url("../../assets/icons/Star-Logo-1.svg");
+		mask-size: cover;
+		&:not(.placeholder) {
+			z-index: 2;
+			background-color: $yellow;
+		}
+		&.placeholder {
+			z-index: 1;
+			background-color: $gray-200;
+		}
+	}
+}

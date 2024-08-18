@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 export default function Header(props) {
 	const location = useLocation();
 	const getNavLinkClass = (path) => {
-		console.log(path);
+		// console.log(path);
 		return location.pathname === path ? " active" : "";
 	};
 	return (
